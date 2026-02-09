@@ -1,0 +1,1234 @@
+2026-02-08 13:52:25 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 14:59:08 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 15:59:32 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 16:08:03 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 16:08:28 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 16:08:29 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 16:08:38 INFO  SongDAO - Fetching all songs
+2026-02-08 16:08:39 INFO  SongDAO - Total songs fetched: 7
+2026-02-08 16:09:07 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-08 16:09:07 INFO  UserDAO - Login successful for user ID: 45
+2026-02-08 16:43:20 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 16:44:03 INFO  UserDAO - Registering user with email: ruhi@gmail.com
+2026-02-08 16:44:04 INFO  UserDAO - User inserted successfully for email: ruhi@gmail.com
+2026-02-08 16:44:04 INFO  UserDAO - Fetching user by email: ruhi@gmail.com
+2026-02-08 16:44:35 INFO  UserDAO - Login attempt for email: ruhi@gmail.com
+2026-02-08 16:44:35 INFO  UserDAO - Login successful for user ID: 101
+2026-02-08 16:44:39 INFO  SongDAO - Fetching all songs
+2026-02-08 16:44:39 INFO  SongDAO - Total songs fetched: 7
+2026-02-08 16:46:07 INFO  SongDAO - Fetching song by ID: 1
+2026-02-08 16:46:07 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-08 16:46:07 INFO  ListeningHistoryDAO - Saving listening history: userId=101, songId=1
+2026-02-08 16:46:07 ERROR ListeningHistoryDAO - Error saving listening history (userId=101, songId=1)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:158) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:61) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:135) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:31) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 16:46:30 INFO  SongDAO - Fetching song by ID: 8
+2026-02-08 16:46:30 INFO  SongDAO - Incrementing play count for song ID: 8
+2026-02-08 16:46:30 INFO  ListeningHistoryDAO - Saving listening history: userId=101, songId=8
+2026-02-08 16:46:30 ERROR ListeningHistoryDAO - Error saving listening history (userId=101, songId=8)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:158) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:61) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:135) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:31) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 16:46:58 INFO  FavouriteDAO - Adding songId=8 to favourites for userId=101
+2026-02-08 16:46:58 INFO  FavouriteDAO - Song added to favourites successfully
+2026-02-08 16:47:17 INFO  FavouriteDAO - Fetching favourite songs for userId=101
+2026-02-08 16:47:17 INFO  FavouriteDAO - Total favourite songs found: 1
+2026-02-08 16:48:04 INFO  PlaylistDAO - Creating playlist for userId=101, name=mysongs
+2026-02-08 16:48:04 INFO  PlaylistDAO - Playlist created successfully
+2026-02-08 16:49:02 INFO  PlaylistDAO - Fetching playlists for userId=101
+2026-02-08 16:49:02 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 16:49:48 INFO  PlaylistDAO - Adding songId=8 to playlistId=21
+2026-02-08 16:49:48 INFO  PlaylistDAO - Song added to playlist successfully
+2026-02-08 16:50:49 INFO  PlaylistDAO - Removing songId=8 from playlistId=21
+2026-02-08 16:50:49 INFO  PlaylistDAO - Song removed from playlist successfully
+2026-02-08 16:51:02 INFO  SongDAO - Searching songs with keyword: pehle
+2026-02-08 16:51:02 INFO  SongDAO - Search results count: 1
+2026-02-08 16:52:09 INFO  ArtistDAO - Searching artists with keyword=melody
+2026-02-08 16:52:09 INFO  ArtistDAO - Total artists found: 0
+2026-02-08 16:56:57 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 16:57:13 INFO  UserDAO - Login attempt for email: ruhi@gmail.com
+2026-02-08 16:57:14 INFO  UserDAO - Login successful for user ID: 101
+2026-02-08 16:57:29 INFO  ListeningHistoryDAO - Fetching listening history for userId=101
+2026-02-08 16:57:29 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-08 16:57:53 INFO  SongDAO - Fetching song by ID: 8
+2026-02-08 16:57:53 INFO  SongDAO - Incrementing play count for song ID: 8
+2026-02-08 16:57:53 INFO  ListeningHistoryDAO - Saving listening history: userId=101, songId=8
+2026-02-08 16:57:53 ERROR ListeningHistoryDAO - Error saving listening history (userId=101, songId=8)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:158) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:61) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:135) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:31) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 16:58:15 INFO  ListeningHistoryDAO - Fetching listening history for userId=101
+2026-02-08 16:58:15 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-08 16:58:50 INFO  UserDAO - Login attempt for email: shaira
+2026-02-08 16:58:50 WARN  UserDAO - Invalid login attempt for email: shaira
+2026-02-08 16:59:04 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-08 16:59:04 INFO  UserDAO - Login successful for user ID: 45
+2026-02-08 17:00:57 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:01:49 INFO  ArtistDAO - Updating artist profile for userId=45
+2026-02-08 17:01:49 INFO  ArtistDAO - Artist profile update status: true
+2026-02-08 17:01:55 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:02:47 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:02:47 INFO  SongDAO - Adding new song: tere mast mast
+2026-02-08 17:02:47 INFO  SongDAO - Song inserted, rows affected: 1
+2026-02-08 17:02:52 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:02:52 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-08 17:02:52 INFO  SongDAO - Songs found for artist 1: 5
+2026-02-08 17:05:42 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:05:42 INFO  AlbumDAO - Creating album for artistId=1
+2026-02-08 17:05:42 INFO  AlbumDAO - Album created successfully with albumId=21
+2026-02-08 17:06:50 INFO  SongDAO - Adding song 'kesariya' to album ID 21
+2026-02-08 17:06:50 INFO  SongDAO - Song added to album, rows affected: 1
+2026-02-08 17:07:20 INFO  SongDAO - Adding song 'sada ninna kannali' to album ID 21
+2026-02-08 17:07:20 INFO  SongDAO - Song added to album, rows affected: 1
+2026-02-08 17:07:45 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-08 17:07:45 INFO  AlbumDAO - Fetching albums with songs for artistId=1
+2026-02-08 17:07:45 INFO  AlbumDAO - Fetched 2 albums with songs
+2026-02-08 18:03:43 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:04:14 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:04:14 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:17:43 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:18:02 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:18:03 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:20:01 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:20:19 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:20:20 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:20:26 INFO  SongDAO - Fetching song by ID: 1
+2026-02-08 18:20:26 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-08 18:26:04 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:26:22 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:26:23 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:27:27 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:27:44 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:27:44 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:27:50 INFO  SongDAO - Fetching all songs
+2026-02-08 18:27:50 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 18:27:58 INFO  FavouriteDAO - Fetching favourite songs for userId=3
+2026-02-08 18:27:58 INFO  FavouriteDAO - Total favourite songs found: 1
+2026-02-08 18:28:02 INFO  SongDAO - Fetching all songs
+2026-02-08 18:28:02 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 18:28:11 INFO  FavouriteDAO - Adding songId=9 to favourites for userId=3
+2026-02-08 18:28:11 INFO  FavouriteDAO - Song added to favourites successfully
+2026-02-08 18:28:27 INFO  FavouriteDAO - Fetching favourite songs for userId=3
+2026-02-08 18:28:27 INFO  FavouriteDAO - Total favourite songs found: 2
+2026-02-08 18:29:33 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:29:33 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:29:48 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:29:48 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:29:52 INFO  SongDAO - Fetching all songs
+2026-02-08 18:29:52 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 18:29:57 INFO  FavouriteDAO - Adding songId=10 to favourites for userId=3
+2026-02-08 18:29:57 INFO  FavouriteDAO - Song added to favourites successfully
+2026-02-08 18:30:04 INFO  FavouriteDAO - Fetching favourite songs for userId=3
+2026-02-08 18:30:04 INFO  FavouriteDAO - Total favourite songs found: 3
+2026-02-08 18:30:10 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-08 18:30:10 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 18:37:39 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 18:37:59 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.co,m
+2026-02-08 18:38:00 WARN  UserDAO - Invalid login attempt for email: nazmeen111@gmail.co,m
+2026-02-08 18:38:17 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 18:38:17 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 18:38:22 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-08 18:38:22 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 18:38:28 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-08 18:38:28 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 18:38:43 INFO  SongDAO - Fetching all songs
+2026-02-08 18:38:43 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 18:38:50 INFO  PlaylistDAO - Adding songId=10 to playlistId=1
+2026-02-08 18:38:50 INFO  PlaylistDAO - Song added to playlist successfully
+2026-02-08 18:38:58 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-08 18:38:58 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 19:04:47 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 19:18:52 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 19:24:34 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:01:08 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:17:47 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:23:43 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:24:45 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 21:24:45 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 21:40:01 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:40:06 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:43:27 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 21:43:28 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 21:46:38 INFO  UserDAO - Registering user with email: ramya@gmail.com
+2026-02-08 21:46:38 INFO  UserDAO - User inserted successfully for email: ramya@gmail.com
+2026-02-08 21:46:38 INFO  UserDAO - Fetching user by email: ramya@gmail.com
+2026-02-08 21:52:57 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 21:52:57 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 21:54:01 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 21:54:16 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 21:54:16 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 21:54:25 INFO  SongDAO - Fetching all songs
+2026-02-08 21:54:25 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 21:54:35 INFO  FavouriteDAO - Fetching favourite songs for userId=102
+2026-02-08 21:54:35 INFO  FavouriteDAO - Total favourite songs found: 0
+2026-02-08 21:54:46 INFO  SongDAO - Fetching all songs
+2026-02-08 21:54:46 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 21:54:54 INFO  FavouriteDAO - Adding songId=14 to favourites for userId=102
+2026-02-08 21:54:54 INFO  FavouriteDAO - Song added to favourites successfully
+2026-02-08 21:54:59 INFO  FavouriteDAO - Fetching favourite songs for userId=102
+2026-02-08 21:54:59 INFO  FavouriteDAO - Total favourite songs found: 1
+2026-02-08 21:55:08 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 21:55:08 INFO  PlaylistDAO - Playlists found: 0
+2026-02-08 22:00:44 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 22:00:44 INFO  PlaylistDAO - Playlists found: 0
+2026-02-08 22:01:23 INFO  PlaylistDAO - Creating playlist for userId=102, name=favsongs
+2026-02-08 22:01:23 INFO  PlaylistDAO - Playlist created successfully
+2026-02-08 22:02:34 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 22:02:34 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 22:02:41 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 22:02:41 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 22:02:51 INFO  SongDAO - Fetching all songs
+2026-02-08 22:02:51 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 22:03:06 INFO  PlaylistDAO - Adding songId=10 to playlistId=22
+2026-02-08 22:03:06 INFO  PlaylistDAO - Song added to playlist successfully
+2026-02-08 22:17:39 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 22:19:59 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 22:19:59 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 22:20:04 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 22:20:04 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 22:24:16 INFO  PlaylistDAO - Fetching playlists for userId=102
+2026-02-08 22:24:16 INFO  PlaylistDAO - Playlists found: 1
+2026-02-08 22:25:19 INFO  PlaylistDAO - Removing songId=10 from playlistId=22
+2026-02-08 22:25:19 INFO  PlaylistDAO - Song removed from playlist successfully
+2026-02-08 22:30:15 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 22:30:30 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 22:30:31 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 22:34:05 INFO  ArtistDAO - Searching artists with keyword=pop
+2026-02-08 22:34:05 INFO  ArtistDAO - Total artists found: 1
+2026-02-08 22:52:26 INFO  ArtistDAO - Searching artists with keyword=10
+2026-02-08 22:52:26 INFO  ArtistDAO - Total artists found: 0
+2026-02-08 22:52:34 INFO  ListeningHistoryDAO - Fetching listening history for userId=102
+2026-02-08 22:52:34 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-08 23:00:12 INFO  SongDAO - Fetching song by ID: 1
+2026-02-08 23:00:12 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-08 23:20:04 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 23:20:28 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 23:20:29 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 23:20:50 INFO  SongDAO - Fetching all songs
+2026-02-08 23:20:50 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 23:20:55 INFO  SongDAO - Fetching song by ID: 9
+2026-02-08 23:20:55 INFO  ListeningHistoryDAO - Saving listening history: userId=102, songId=9
+2026-02-08 23:20:56 ERROR ListeningHistoryDAO - Error saving listening history (userId=102, songId=9)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:175) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 23:20:56 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-08 23:21:05 INFO  ListeningHistoryDAO - Fetching listening history for userId=102
+2026-02-08 23:21:05 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-08 23:41:17 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 23:41:34 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-08 23:41:35 INFO  UserDAO - Login successful for user ID: 3
+2026-02-08 23:41:38 INFO  SongDAO - Fetching all songs
+2026-02-08 23:41:39 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 23:41:41 INFO  SongDAO - Fetching song by ID: 1
+2026-02-08 23:41:41 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=1
+2026-02-08 23:41:41 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=1)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:169) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 23:41:41 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-08 23:41:41 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=1
+2026-02-08 23:41:41 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=1)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:177) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-08 23:41:41 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-08 23:41:52 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-08 23:41:52 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-08 23:59:16 INFO  MainApp - 🚀 RevPlay application started
+2026-02-08 23:59:34 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-08 23:59:35 INFO  UserDAO - Login successful for user ID: 102
+2026-02-08 23:59:45 INFO  SongDAO - Fetching all songs
+2026-02-08 23:59:45 INFO  SongDAO - Total songs fetched: 10
+2026-02-08 23:59:49 INFO  SongDAO - Fetching song by ID: 9
+2026-02-08 23:59:49 INFO  ListeningHistoryDAO - Saving listening history: userId=102, songId=9
+2026-02-08 23:59:49 ERROR ListeningHistoryDAO - Error saving listening history (userId=102, songId=9)
+java.sql.SQLException: ORA-17003: Invalid column index
+https://docs.oracle.com/error-help/db/ora-17003/
+	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:4914) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:4902) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:37) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:169) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+2026-02-08 23:59:49 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-08 23:59:49 INFO  ListeningHistoryDAO - Saving listening history: userId=102, songId=9
+2026-02-08 23:59:49 ERROR ListeningHistoryDAO - Error saving listening history (userId=102, songId=9)
+java.sql.SQLException: ORA-17003: Invalid column index
+https://docs.oracle.com/error-help/db/ora-17003/
+	at oracle.jdbc.driver.OraclePreparedStatement.setIntInternal(OraclePreparedStatement.java:4914) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.setInt(OraclePreparedStatement.java:4902) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setInt(OraclePreparedStatementWrapper.java:209) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:37) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:177) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+2026-02-08 23:59:49 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-08 23:59:56 INFO  ListeningHistoryDAO - Fetching listening history for userId=102
+2026-02-08 23:59:56 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 00:22:03 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 00:22:19 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 00:22:20 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 00:22:24 INFO  SongDAO - Fetching all songs
+2026-02-09 00:22:24 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 00:22:27 INFO  SongDAO - Fetching song by ID: 11
+2026-02-09 00:22:27 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=11
+2026-02-09 00:22:27 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=11)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:34) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:171) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 00:22:27 INFO  SongDAO - Incrementing play count for song ID: 11
+2026-02-09 00:22:36 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 00:22:36 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 00:39:46 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 00:40:03 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-09 00:40:05 INFO  UserDAO - Login successful for user ID: 102
+2026-02-09 00:43:51 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 00:44:11 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-09 00:44:13 INFO  UserDAO - Login successful for user ID: 102
+2026-02-09 00:44:20 INFO  SongDAO - Fetching all songs
+2026-02-09 00:44:20 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 00:44:23 INFO  SongDAO - Fetching song by ID: 5
+2026-02-09 00:44:23 INFO  ListeningHistoryDAO - Saving listening history: userId=102, songId=5
+2026-02-09 00:44:23 ERROR ListeningHistoryDAO - Error saving listening history (userId=102, songId=5)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:171) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:58) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 00:44:23 INFO  SongDAO - Incrementing play count for song ID: 5
+2026-02-09 00:44:33 INFO  ListeningHistoryDAO - Fetching listening history for userId=102
+2026-02-09 00:44:33 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 00:52:59 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 00:53:19 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 00:53:20 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 00:53:25 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 00:53:25 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 00:53:35 INFO  SongDAO - Fetching all songs
+2026-02-09 00:53:35 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 00:53:38 INFO  SongDAO - Fetching song by ID: 14
+2026-02-09 00:53:38 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=14
+2026-02-09 00:53:38 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=14)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:171) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:59) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 00:53:38 INFO  SongDAO - Incrementing play count for song ID: 14
+2026-02-09 00:53:42 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 00:53:43 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 01:05:08 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:05:29 INFO  UserDAO - Login attempt for email: ramya@gmail.com
+2026-02-09 01:05:29 INFO  UserDAO - Login successful for user ID: 102
+2026-02-09 01:05:33 INFO  SongDAO - Fetching all songs
+2026-02-09 01:05:33 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:05:36 INFO  SongDAO - Fetching song by ID: 8
+2026-02-09 01:05:36 INFO  ListeningHistoryDAO - Saving listening history: userId=102, songId=8
+2026-02-09 01:05:36 ERROR ListeningHistoryDAO - Error saving listening history (userId=102, songId=8)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:174) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:59) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 01:05:36 INFO  SongDAO - Incrementing play count for song ID: 8
+2026-02-09 01:05:52 INFO  ListeningHistoryDAO - Fetching listening history for userId=102
+2026-02-09 01:05:52 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 01:13:04 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:13:22 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:13:23 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:13:26 INFO  SongDAO - Fetching all songs
+2026-02-09 01:13:26 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:13:29 INFO  SongDAO - Fetching song by ID: 6
+2026-02-09 01:13:29 INFO  SongDAO - Incrementing play count for song ID: 6
+2026-02-09 01:13:29 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=6
+2026-02-09 01:13:29 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=6)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:176) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:59) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 01:13:35 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 01:13:35 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 01:23:52 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:24:15 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:24:16 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:24:20 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 01:24:20 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 01:26:15 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:26:34 INFO  UserDAO - Login attempt for email: nazmeen124@gmail.com
+2026-02-09 01:26:35 WARN  UserDAO - Invalid login attempt for email: nazmeen124@gmail.com
+2026-02-09 01:26:51 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:26:51 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:26:57 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 01:26:57 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 01:31:43 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:32:00 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:32:01 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:32:11 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 01:32:11 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 01:32:20 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 01:32:20 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 01:33:38 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:33:54 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:33:54 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:34:18 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 01:34:18 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 01:48:20 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:48:34 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:48:35 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:49:19 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:49:33 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:49:34 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:50:05 INFO  SongDAO - Fetching all songs
+2026-02-09 01:50:05 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:51:39 INFO  SongDAO - Fetching all songs
+2026-02-09 01:51:39 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:51:43 INFO  SongDAO - Fetching song by ID: 9
+2026-02-09 01:51:43 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-09 01:51:43 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=9
+2026-02-09 01:51:44 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=9)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:208) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:68) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 01:54:11 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:54:30 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:54:30 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:54:34 INFO  SongDAO - Fetching all songs
+2026-02-09 01:54:34 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:54:37 INFO  SongDAO - Fetching song by ID: 9
+2026-02-09 01:54:37 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-09 01:54:37 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=9
+2026-02-09 01:54:37 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=9)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:208) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:68) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 01:58:19 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 01:58:35 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 01:58:36 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 01:58:42 INFO  SongDAO - Fetching all songs
+2026-02-09 01:58:42 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 01:58:44 INFO  SongDAO - Fetching song by ID: 13
+2026-02-09 01:58:44 INFO  SongDAO - Incrementing play count for song ID: 13
+2026-02-09 01:58:45 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=13
+2026-02-09 01:58:45 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=13)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:208) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:68) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 02:03:11 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 02:03:27 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 02:03:28 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 02:03:36 INFO  SongDAO - Fetching all songs
+2026-02-09 02:03:36 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 02:03:41 INFO  SongDAO - Fetching song by ID: 1
+2026-02-09 02:03:41 INFO  SongDAO - Incrementing play count for song ID: 1
+2026-02-09 02:03:42 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=1
+2026-02-09 02:03:42 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=1)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:208) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:68) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 02:04:49 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 02:05:11 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 02:05:11 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 02:05:16 INFO  SongDAO - Fetching all songs
+2026-02-09 02:05:17 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 02:05:19 INFO  SongDAO - Fetching song by ID: 13
+2026-02-09 02:05:19 INFO  SongDAO - Incrementing play count for song ID: 13
+2026-02-09 02:05:19 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=13
+2026-02-09 02:05:19 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=13)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:208) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:68) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 02:07:12 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 02:07:30 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 02:07:30 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 02:07:55 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 02:07:55 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 02:08:34 INFO  PlaylistDAO - Fetching playlists for userId=3
+2026-02-09 02:08:34 INFO  PlaylistDAO - Playlists found: 1
+2026-02-09 02:16:31 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 02:16:50 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 02:16:51 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 06:44:32 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 06:45:04 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 06:45:05 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 06:45:16 INFO  SongDAO - Fetching all songs
+2026-02-09 06:45:16 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 06:45:19 INFO  SongDAO - Fetching all songs
+2026-02-09 06:45:19 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 06:45:30 INFO  SongDAO - Fetching song by ID: 11
+2026-02-09 06:45:30 INFO  SongDAO - Incrementing play count for song ID: 11
+2026-02-09 06:45:30 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=11
+2026-02-09 06:45:30 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=11)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:210) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:70) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 07:00:58 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 07:01:12 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 07:01:13 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 07:01:30 INFO  AlbumDAO - Fetching albums for artistId=1
+2026-02-09 07:01:30 INFO  AlbumDAO - Total albums found: 2
+2026-02-09 07:32:25 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 07:33:04 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 07:33:05 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 07:39:46 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 07:40:27 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 07:40:28 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 07:40:31 INFO  SongDAO - Fetching all songs
+2026-02-09 07:40:31 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 07:40:33 INFO  SongDAO - Fetching all songs
+2026-02-09 07:40:33 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 07:40:37 INFO  SongDAO - Fetching song by ID: 5
+2026-02-09 07:40:37 INFO  SongDAO - Incrementing play count for song ID: 5
+2026-02-09 07:40:37 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=5
+2026-02-09 07:40:37 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=5)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:192) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:66) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 07:40:57 INFO  SongDAO - Searching songs with keyword: melody
+2026-02-09 07:40:57 INFO  SongDAO - Search results count: 5
+2026-02-09 07:41:07 INFO  SongDAO - Searching songs with keyword: my
+2026-02-09 07:41:07 INFO  SongDAO - Search results count: 0
+2026-02-09 07:41:07 INFO  ArtistDAO - Searching artists with keyword=my
+2026-02-09 07:41:07 INFO  ArtistDAO - Total artists found: 0
+2026-02-09 07:44:16 INFO  SongDAO - Fetching all songs
+2026-02-09 07:44:16 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 07:44:19 INFO  SongDAO - Fetching song by ID: 9
+2026-02-09 07:44:19 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-09 07:44:19 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=9
+2026-02-09 07:44:19 ERROR ListeningHistoryDAO - Error saving listening history (userId=3, songId=9)
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:33) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:192) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:66) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 07:44:31 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 07:44:31 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 07:52:53 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 07:53:08 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 07:53:09 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 07:53:12 INFO  SongDAO - Fetching all songs
+2026-02-09 07:53:12 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 07:53:18 INFO  SongDAO - Fetching song by ID: 6
+2026-02-09 07:53:18 INFO  SongDAO - Incrementing play count for song ID: 6
+2026-02-09 07:53:18 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=6
+2026-02-09 07:53:18 ERROR ListeningHistoryDAO - Error saving listening history
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:36) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:192) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:66) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 07:53:34 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 07:53:34 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 08:00:45 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 08:01:11 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.co
+2026-02-09 08:01:11 WARN  UserDAO - Invalid login attempt for email: nazmeen111@gmail.co
+2026-02-09 08:01:27 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 08:01:27 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 08:01:32 INFO  SongDAO - Fetching all songs
+2026-02-09 08:01:33 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 08:01:37 INFO  SongDAO - Fetching song by ID: 5
+2026-02-09 08:01:37 INFO  SongDAO - Incrementing play count for song ID: 5
+2026-02-09 08:01:37 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=5
+2026-02-09 08:01:37 ERROR ListeningHistoryDAO - Error saving listening history
+java.sql.SQLSyntaxErrorException: ORA-02289: sequence does not exist
+
+https://docs.oracle.com/error-help/db/ora-02289/
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:715) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:615) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1315) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:975) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:237) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:508) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:285) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1266) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1714) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1456) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3950) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.doExecuteLargeUpdate(OraclePreparedStatement.java:4150) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeUpdate(OraclePreparedStatement.java:4131) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:4106) ~[ojdbc8.jar:23.26.0.0.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1003) ~[ojdbc8.jar:23.26.0.0.0]
+	at com.revplay.dao.ListeningHistoryDAO.addHistory(ListeningHistoryDAO.java:36) [classes/:?]
+	at com.revplay.ui.UserDashboard.playSong(UserDashboard.java:192) [classes/:?]
+	at com.revplay.ui.UserDashboard.start(UserDashboard.java:66) [classes/:?]
+	at com.revplay.ui.UserMenu.login(UserMenu.java:147) [classes/:?]
+	at com.revplay.ui.UserMenu.start(UserMenu.java:33) [classes/:?]
+	at com.revplay.MainApp.main(MainApp.java:17) [classes/:?]
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-02289: sequence does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:723) ~[ojdbc8.jar:23.26.0.0.0]
+	... 20 more
+2026-02-09 08:01:49 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 08:01:49 INFO  ListeningHistoryDAO - Listening history records found: 0
+2026-02-09 08:07:53 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 08:08:18 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 08:08:19 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 08:08:23 INFO  SongDAO - Fetching all songs
+2026-02-09 08:08:23 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 08:08:30 INFO  SongDAO - Fetching song by ID: 11
+2026-02-09 08:08:31 INFO  SongDAO - Incrementing play count for song ID: 11
+2026-02-09 08:08:31 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=11
+2026-02-09 08:08:31 INFO  ListeningHistoryDAO - Listening history saved successfully
+2026-02-09 08:08:38 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 08:08:38 INFO  ListeningHistoryDAO - Listening history records found: 1
+2026-02-09 08:11:01 INFO  SongDAO - Fetching all songs
+2026-02-09 08:11:01 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 08:11:06 INFO  SongDAO - Fetching song by ID: 12
+2026-02-09 08:11:06 INFO  SongDAO - Incrementing play count for song ID: 12
+2026-02-09 08:11:06 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=12
+2026-02-09 08:11:06 INFO  ListeningHistoryDAO - Listening history saved successfully
+2026-02-09 08:11:14 INFO  SongDAO - Fetching all songs
+2026-02-09 08:11:14 INFO  SongDAO - Total songs fetched: 10
+2026-02-09 08:11:19 INFO  SongDAO - Fetching song by ID: 8
+2026-02-09 08:11:19 INFO  SongDAO - Incrementing play count for song ID: 8
+2026-02-09 08:11:19 INFO  ListeningHistoryDAO - Saving listening history: userId=3, songId=8
+2026-02-09 08:11:19 INFO  ListeningHistoryDAO - Listening history saved successfully
+2026-02-09 08:11:44 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 08:11:44 INFO  ListeningHistoryDAO - Listening history records found: 3
+2026-02-09 08:15:18 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 08:16:23 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 08:16:24 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 08:16:30 INFO  ListeningHistoryDAO - Fetching listening history for userId=3
+2026-02-09 08:16:30 INFO  ListeningHistoryDAO - Listening history records found: 3
+2026-02-09 08:16:56 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:12:33 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:15:36 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:16:03 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 09:16:03 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 09:16:47 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 09:16:47 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 09:32:44 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:33:48 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 09:33:49 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 09:34:47 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:34:51 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:36:58 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:39:30 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:40:21 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 09:40:22 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 09:40:31 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:40:35 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:43:31 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:44:25 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 09:44:44 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 09:44:44 WARN  UserDAO - Invalid login attempt for email: shaira@gmail.com
+2026-02-09 09:45:03 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 09:45:03 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 09:45:07 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:45:17 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 09:45:17 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-09 09:45:17 INFO  SongDAO - Songs found for artist 1: 7
+2026-02-09 10:01:58 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 10:03:28 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 10:03:29 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 10:03:33 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:03:33 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-09 10:03:33 INFO  SongDAO - Songs found for artist 1: 7
+2026-02-09 10:03:49 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:15:15 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 10:15:49 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 10:15:50 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 10:16:00 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:16:00 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-09 10:16:00 INFO  SongDAO - Songs found for artist 1: 7
+2026-02-09 10:33:51 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 10:48:46 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 10:49:38 INFO  UserDAO - Login attempt for email: gmail.comshaira@
+2026-02-09 10:49:39 WARN  UserDAO - Invalid login attempt for email: gmail.comshaira@
+2026-02-09 10:54:29 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 10:54:29 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 10:54:34 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:54:52 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:54:59 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 10:54:59 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-09 10:54:59 INFO  SongDAO - Songs found for artist 1: 7
+2026-02-09 10:55:15 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 11:05:28 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 11:05:28 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 11:21:15 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 11:21:39 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 11:21:41 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 11:22:11 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 11:22:11 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 11:58:21 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 11:59:48 INFO  UserDAO - Login attempt for email: nazmnazmeen111@gmail.com
+2026-02-09 11:59:49 WARN  UserDAO - Invalid login attempt for email: nazmnazmeen111@gmail.com
+2026-02-09 12:00:03 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 12:00:03 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 12:01:09 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 12:01:09 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 12:47:13 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 12:47:32 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 12:47:33 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 12:55:49 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 12:56:25 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 12:56:26 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 12:56:33 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 12:57:40 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 12:58:07 INFO  UserDAO - Login attempt for email: shaira@gmail.com
+2026-02-09 12:58:07 INFO  UserDAO - Login successful for user ID: 45
+2026-02-09 12:58:15 INFO  ArtistDAO - Fetching artist by userId=45
+2026-02-09 12:58:15 INFO  SongDAO - Fetching songs for artist ID: 1
+2026-02-09 12:58:15 INFO  SongDAO - Songs found for artist 1: 6
+2026-02-09 13:14:28 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 13:15:01 INFO  UserDAO - Login attempt for email: nazmeen111@gmail.com
+2026-02-09 13:15:01 INFO  UserDAO - Login successful for user ID: 3
+2026-02-09 13:16:02 INFO  SongDAO - Searching songs with keyword: rap
+2026-02-09 13:16:02 INFO  SongDAO - Search results count: 1
+2026-02-09 13:16:02 INFO  ArtistDAO - Searching artists with keyword=rap
+2026-02-09 13:16:02 INFO  ArtistDAO - Total artists found: 1
+2026-02-09 15:22:27 INFO  SongDAO - Fetching all songs
+2026-02-09 15:22:28 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 15:24:33 INFO  SongDAO - Fetching song by ID: 1
+2026-02-09 15:24:34 INFO  SongDAO - Searching songs with keyword: melody
+2026-02-09 15:24:34 INFO  SongDAO - Search results count: 5
+2026-02-09 15:24:34 INFO  SongDAO - Fetching all songs
+2026-02-09 15:24:34 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 15:48:00 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 15:48:47 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 21:59:03 INFO  SongDAO - Fetching song by ID: 1
+2026-02-09 21:59:04 INFO  SongDAO - Searching songs with keyword: melody
+2026-02-09 21:59:04 INFO  SongDAO - Search results count: 5
+2026-02-09 21:59:04 INFO  SongDAO - Fetching all songs
+2026-02-09 21:59:04 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 22:49:43 INFO  SongDAO - Fetching song by ID: 1
+2026-02-09 22:49:44 INFO  SongDAO - Searching songs with keyword: melody
+2026-02-09 22:49:44 INFO  SongDAO - Search results count: 5
+2026-02-09 22:49:44 INFO  SongDAO - Fetching all songs
+2026-02-09 22:49:44 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 23:45:35 INFO  MainApp - 🚀 RevPlay application started
+2026-02-09 23:48:06 INFO  UserDAO - Registering user with email: rahul@gmail.com
+2026-02-09 23:48:07 INFO  UserDAO - User inserted successfully for email: rahul@gmail.com
+2026-02-09 23:48:07 INFO  UserDAO - Fetching user by email: rahul@gmail.com
+2026-02-09 23:48:16 INFO  SongDAO - Fetching all songs
+2026-02-09 23:48:16 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 23:48:23 INFO  SongDAO - Fetching all songs
+2026-02-09 23:48:23 INFO  SongDAO - Total songs fetched: 9
+2026-02-09 23:50:05 INFO  SongDAO - Fetching song by ID: 9
+2026-02-09 23:50:06 INFO  SongDAO - Incrementing play count for song ID: 9
+2026-02-09 23:50:06 INFO  ListeningHistoryDAO - Saving listening history: userId=125, songId=9
+2026-02-09 23:50:06 INFO  ListeningHistoryDAO - Listening history saved successfully
+2026-02-09 23:50:19 INFO  SongDAO - Searching songs with keyword: pop
+2026-02-09 23:50:19 INFO  SongDAO - Search results count: 0
+2026-02-09 23:50:34 INFO  SongDAO - Searching songs with keyword: rap
+2026-02-09 23:50:34 INFO  SongDAO - Search results count: 1
+2026-02-09 23:50:41 INFO  SongDAO - Searching songs with keyword: sada
+2026-02-09 23:50:41 INFO  SongDAO - Search results count: 1
+2026-02-09 23:50:48 INFO  PodcastDAO - Fetching all podcasts
+2026-02-09 23:50:48 INFO  PodcastDAO - Total podcasts fetched: 0
+2026-02-09 23:52:00 INFO  PodcastDAO - Searching podcasts with keyword='my'
+2026-02-09 23:52:00 INFO  PodcastDAO - Search result count for keyword='my': 0
+2026-02-09 23:56:15 INFO  SongDAO - Searching songs with keyword: 7
+2026-02-09 23:56:15 INFO  SongDAO - Search results count: 0
+2026-02-09 23:56:15 INFO  ArtistDAO - Searching artists with keyword=7
+2026-02-09 23:56:15 INFO  ArtistDAO - Total artists found: 0
+2026-02-09 23:56:15 INFO  AlbumDAO - Searching albums with keyword='7'
+2026-02-09 23:56:15 INFO  AlbumDAO - Search result count for keyword='7': 0
+2026-02-09 23:56:15 INFO  PlaylistDAO - Searching public playlists with keyword='7'
+2026-02-09 23:56:15 INFO  PlaylistDAO - Search result count for keyword='7': 0
+2026-02-09 23:56:26 INFO  SongDAO - Searching songs with keyword: my
+2026-02-09 23:56:26 INFO  SongDAO - Search results count: 0
+2026-02-09 23:56:26 INFO  ArtistDAO - Searching artists with keyword=my
+2026-02-09 23:56:26 INFO  ArtistDAO - Total artists found: 0
+2026-02-09 23:56:26 INFO  AlbumDAO - Searching albums with keyword='my'
+2026-02-09 23:56:26 INFO  AlbumDAO - Search result count for keyword='my': 0
+2026-02-09 23:56:26 INFO  PlaylistDAO - Searching public playlists with keyword='my'
+2026-02-09 23:56:27 INFO  PlaylistDAO - Search result count for keyword='my': 1
+2026-02-10 00:23:15 INFO  SongDAO - Fetching all songs
+2026-02-10 00:23:16 INFO  SongDAO - Total songs fetched: 9
+2026-02-10 00:23:21 INFO  FavouriteDAO - Adding songId=11 to favourites for userId=125
+2026-02-10 00:23:21 INFO  FavouriteDAO - Song added to favourites successfully
