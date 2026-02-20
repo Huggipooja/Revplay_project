@@ -1,4 +1,4 @@
-# RevPlay Project 🎵
+# RevPlay Project 
 
 RevPlay is a console-based music streaming application developed using Java.  
 It allows users to explore songs, manage playlists, albums, podcasts, and track listening history.
